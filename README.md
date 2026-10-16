@@ -1,6 +1,6 @@
 # dotfiles_nix
 
-My personal NixOS dotfiles and configuration files.
+My NixOS dotfiles and configuration files.
 
 ## Contents
 
@@ -16,7 +16,7 @@ My personal NixOS dotfiles and configuration files.
 
 ## Requirements
 
-- NixOS (or Nix with flakes enabled)
+- NixOS (only w\o flakes)
 - Wayland-compatible environment (niri)
 - Git
 
