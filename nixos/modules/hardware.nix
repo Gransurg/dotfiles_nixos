@@ -29,7 +29,7 @@
   };
 };
   # Use stable kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest; # Рекомендуется использовать latest для поддержки новых чипов
+  boot.kernelPackages = pkgs.linuxPackages_latest;  
 
   boot.extraModulePackages = [
     # config.boot.kernelPackages.zenpower
@@ -43,7 +43,7 @@
     "lenovo-legion-module"
     "k10temp"
     "mt7925e"
-    "iwlwifi"# Добавляем модуль Wi-Fi в автозагрузку
+    "iwlwifiу"
   ];
 
   boot.extraModprobeConfig = ''
@@ -62,7 +62,6 @@
   ];
 
   hardware.i2c.enable = true;
-  # Включаем прошивки, так как mt7925 требует их для работы
   hardware.enableAllFirmware = true;
   hardware.xpadneo.enable = true;
 

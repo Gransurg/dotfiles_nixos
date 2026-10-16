@@ -32,22 +32,17 @@
   networking.wireless.iwd = {
      enable = true;
    };
-  # Рекомендуется также явно отключить wpa_supplicant,
-  # чтобы не было конфликтов демонов
   # networking.wireless.enable = false;
   hardware.bluetooth.enable = true;
 
-  # Включение питания адаптера при загрузке системы
   hardware.bluetooth.powerOnBoot = true;
 
-  # включение поддержки экспериментальных функций (показ заряда батареи наушников)
   hardware.bluetooth.settings = {
     General = {
       Experimental = true;
     };
   };
 
-  # Включение графического менеджера (Blueman)
   services.blueman.enable = true;
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
@@ -75,7 +70,6 @@
 
   services.printing = {
     enable = true;
-    # Это заставит систему создать правильные ссылки на фильтры
     drivers = [
       (pkgs.symlinkJoin {
         name = "samsung-splix-combined";
