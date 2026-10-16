@@ -29,12 +29,6 @@ output "DP-2" {
     mode "2560x1440@199.999"
     scale 1.2
     variable-refresh-rate
-    // off
-}
-debug {
-   render-drm-device "/dev/dri/renderD128" //для фикса микро статтеров на внешнем монике
-   // wait-for-frame-completion-before-queueing
-   // render-drm-device "/dev/dri/by-path/pci-0000:05:00.0-render"
 }
 layout {
     gaps 3.5
@@ -124,7 +118,6 @@ animations {
 spawn-at-startup "waybar"
 spawn-at-startup "waypaper" "--restore"
 spawn-at-startup "swayosd-server"
-spawn-at-startup "fastfetch"
 spawn-at-startup "swaync"
 
 cursor {
@@ -185,7 +178,7 @@ binds {
 
     Print { screenshot; }
     Alt+Print { screenshot-window; }
-	// из бинда на смену языка оно не работает, потом сменю
+  	// из бинда на смену языка оно не работает, потом сменю
     Alt+Shift+Backspace { quit; }
     Alt+Shift+P { power-off-monitors; }
 
@@ -200,7 +193,7 @@ binds {
     // Управление яркостью экрана
     XF86MonBrightnessUp   { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "10%+"; }
     XF86MonBrightnessDown { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "10%-"; }
-// Поглощение окна в колонку
+    // Поглощение окна в колонку
     Alt+G { consume-window-into-column; }
     // Изгнание окна из колонки
     Alt+Shift+G { expel-window-from-column; }
@@ -210,36 +203,3 @@ binds {
     Alt+C { center-column; }
 }
 
-environment
-output "eDP-2" {
-    off
-
-    mode "2560x1600@240.000"
-
-    scale 1.5
-
-    transform "normal"
-    position x=0 y=0
-
-    variable-refresh-rate
-
-}
-output "DP-2" {
-    mode "2560x1440@199.999"
-
-    scale 1.0
-
-    transform "normal"
-    position x=1280 y=0
-}
-output "DP-1" {
-    mode "2560x1440@199.999"
-
-    scale 1.2
-
-    transform "normal"
-    position x=1707 y=0
-
-    variable-refresh-rate
-
-}
