@@ -1,0 +1,5 @@
+require("config.options")
+require("config.theme").setup()
+require("config.lazy")
+require("config.autocmds")
+require("config.keymaps")

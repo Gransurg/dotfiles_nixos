@@ -1,0 +1,245 @@
+// Конфигурация Niri (Alt-based) - Validated Version
+// Проблемные клавиши: Super, Ctrl, I, ], E (минимизированы)
+prefer-no-csd
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:alt_shift_toggle"
+        }
+        numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse
+}
+
+output "eDP-1" {
+    variable-refresh-rate
+    mode "2560x1600@240.000"
+    scale 1.5
+}
+
+
+
+output "DP-2" {
+    mode "2560x1440@199.999"
+    scale 1.2
+    variable-refresh-rate
+    // off
+}
+debug {
+   render-drm-device "/dev/dri/renderD128" //для фикса микро статтеров на внешнем монике
+   // wait-for-frame-completion-before-queueing
+   // render-drm-device "/dev/dri/by-path/pci-0000:05:00.0-render"
+}
+layout {
+    gaps 3.5
+    center-focused-column "never"
+    always-center-single-column
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 1.5
+        active-color "#d5c4a1"
+        inactive-color "#282828"
+    }
+
+    border {
+        off
+
+        width 2
+        active-color "#d5c4a1"
+        inactive-color "#282828"
+    }
+    background-color "rgba(0, 0, 0, 0.0)"
+
+    tab-indicator {
+        hide-when-single-tab
+        place-within-column
+        gap 2
+        width 8
+        length total-proportion=0.5
+        position "left"
+        gaps-between-tabs 8
+        corner-radius 5
+        active-color "#d5c4a1"
+        inactive-color "#282828"
+        urgent-color "blue"
+    }
+
+    insert-hint {
+        // off
+        on
+        color "#ffc87f80"
+        // gradient from="#ffbb6680" to="#ffc88080" angle=45 relative-to="workspace-view"
+    }
+    shadow {
+        on
+    }
+}
+
+layer-rule {
+    match namespace="^awww-daemon$"
+    place-within-backdrop true
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+animations {
+    // 0.3 сделает переключение почти мгновенным.
+    // Если покажется слишком резким, поставь 0.5.
+    slowdown 1.2
+
+    // Движение ленты влево-вправо (Alt+A, Alt+D)
+    horizontal-view-movement {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+    }
+
+    // Движение окон вверх-вниз (Alt+W, Alt+S)
+    window-movement {
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+    }
+    overview-open-close {
+        duration-ms 250
+    }
+    window-open {
+        off
+    }
+}
+
+spawn-at-startup "waybar"
+spawn-at-startup "waypaper" "--restore"
+spawn-at-startup "swayosd-server"
+spawn-at-startup "fastfetch"
+spawn-at-startup "swaync"
+
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 25
+}
+
+binds {
+    Alt+Slash { show-hotkey-overlay; }
+
+    Alt+T { spawn "kitty"; }
+    Alt+O { spawn "rofi" "-show" "drun"; }
+    Alt+N { spawn "swaync-client" "-t" "-sw"; }
+    Alt+Q { close-window; }
+
+    // НАВИГАЦИЯ (WASD)
+    Alt+A { focus-column-left; }
+    Alt+S { focus-window-down; }
+    Alt+W { focus-window-up; }
+    Alt+D { focus-column-right; }
+
+    // ПЕРЕМЕЩЕНИЕ ОКОН
+    Alt+Shift+A { move-column-left; }
+    Alt+Shift+S { move-window-down; }
+    Alt+Shift+W { move-window-up; }
+    Alt+Shift+D { move-column-right; }
+
+    // Переключить окно в режим "плавающего"
+    Alt+V { toggle-window-floating; }
+
+    Alt+F { fullscreen-window; }
+    Alt+M { maximize-column; }
+
+    Alt+1 { focus-workspace 1; }
+    Alt+2 { focus-workspace 2; }
+    Alt+3 { focus-workspace 3; }
+    Alt+4 { focus-workspace 4; }
+    Alt+5 { focus-workspace 5; }
+    Alt+6 { focus-workspace 6; }
+    Alt+7 { focus-workspace 7; }
+    Alt+8 { focus-workspace 8; }
+    Alt+9 { focus-workspace 9; }
+
+    Alt+F1 { move-column-to-workspace 1; }
+    Alt+F2 { move-column-to-workspace 2; }
+    Alt+F3 { move-column-to-workspace 3; }
+    Alt+F4 { move-column-to-workspace 4; }
+    Alt+F5 { move-column-to-workspace 5; }
+    Alt+F6 { move-column-to-workspace 6; }
+    Alt+F7 { move-column-to-workspace 7; }
+    Alt+F8 { move-column-to-workspace 8; }
+    Alt+F9 { move-column-to-workspace 9; }
+
+    Alt+Minus { set-column-width "-10%"; }
+    Alt+Equal { set-column-width "+10%"; }
+
+    Alt+R { switch-preset-column-width; }
+
+    Print { screenshot; }
+    Alt+Print { screenshot-window; }
+	// из бинда на смену языка оно не работает, потом сменю
+    Alt+Shift+Backspace { quit; }
+    Alt+Shift+P { power-off-monitors; }
+
+    Alt+Tab { toggle-overview; }
+
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+" "-l" "1.5"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
+    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    // Управление микрофоном
+
+    // Управление яркостью экрана
+    XF86MonBrightnessUp   { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "10%+"; }
+    XF86MonBrightnessDown { spawn "brightnessctl" "--device=amdgpu_bl2" "set" "10%-"; }
+// Поглощение окна в колонку
+    Alt+G { consume-window-into-column; }
+    // Изгнание окна из колонки
+    Alt+Shift+G { expel-window-from-column; }
+
+
+    // Центрирование колонки
+    Alt+C { center-column; }
+}
+
+environment
+output "eDP-2" {
+    off
+
+    mode "2560x1600@240.000"
+
+    scale 1.5
+
+    transform "normal"
+    position x=0 y=0
+
+    variable-refresh-rate
+
+}
+output "DP-2" {
+    mode "2560x1440@199.999"
+
+    scale 1.0
+
+    transform "normal"
+    position x=1280 y=0
+}
+output "DP-1" {
+    mode "2560x1440@199.999"
+
+    scale 1.2
+
+    transform "normal"
+    position x=1707 y=0
+
+    variable-refresh-rate
+
+}

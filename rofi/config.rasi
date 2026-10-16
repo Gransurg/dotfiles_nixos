@@ -1,0 +1,157 @@
+/*
+ * ROFI THEME - CLEAN & UNIVERSAL
+ * Особенности: Исправлена "зебра", настроены отступы, убраны системные зависимости.
+ */
+
+configuration {
+    show-icons:      true;
+    icon-theme:      "Papirus-Dark";
+    font:            "JetBrainsMono Nerd Font 11";
+
+    display-drun:    " Apps";
+    display-run:     " Run";
+    display-clipboard: "󰅌 Clip";
+    
+    kb-cancel:              "Escape";
+    kb-accept-entry:        "Return,KP_Enter";
+    kb-custom-1:            "Alt+u";
+    kb-custom-2:            "Alt+y";
+
+    scroll-method:          0;
+    click-to-exit:          true;
+}
+
+/* =====================================================================
+   ЦВЕТОВАЯ ПАЛИТРА (Запеченные цвета в стиле твоего скриншота)
+   ===================================================================== */
+* {
+    /* Основные цвета фона */
+    var-win-bg:          #11111b; /* Глубокий темный */
+    var-input-bg:        #1e1e2e; /* Чуть светлее для поля поиска */
+    
+    /* Акценты */
+    var-active-bg:       #89b4fa; /* Голубой как на Waterfox */
+    var-urgent-bg:       #f38ba8; /* Для алертов */
+    
+    /* Текст */
+    var-text-def:        #cdd6f4;
+    var-text-dim:        #7f849c;
+    var-text-active:     #11111b;
+
+    background-color:    transparent;
+    text-color:          @var-text-def;
+}
+
+/* =====================================================================
+   ОКНО И ГЛАВНЫЙ КОНТЕЙНЕР
+   ===================================================================== */
+
+window {
+    location:           center;
+    anchor:             center;
+    width:              600px;
+    
+    background-color:   @var-win-bg;
+    border:             2px;
+    border-color:       #313244;
+    border-radius:      12px;
+    padding:            20px;
+}
+
+mainbox {
+    children:           [ inputbar, message, listview ];
+    spacing:            15px;
+}
+
+/* =====================================================================
+   ИНПУТ (ПОИСК)
+   ===================================================================== */
+
+inputbar {
+    children:           [ prompt, entry ];
+    spacing:            12px;
+    padding:            12px;
+    border-radius:      8px;
+    background-color:   @var-input-bg;
+}
+
+prompt {
+    text-color:         @var-active-bg;
+    font:               "JetBrainsMono Nerd Font Bold 11";
+}
+
+entry {
+    placeholder:        "Search...";
+    placeholder-color:  @var-text-dim;
+    text-color:         @var-text-def;
+}
+
+/* =====================================================================
+   СПИСОК ЭЛЕМЕНТОВ (Исправлена полосатость)
+   ===================================================================== */
+
+listview {
+    columns:            1;
+    lines:              8;
+    cycle:              true;
+    scrollbar:          false;
+    spacing:            8px;
+    fixed-height:       false;
+    padding:            0;
+}
+
+element {
+    padding:            10px 15px;
+    border-radius:      8px;
+    spacing:            12px; /* Увеличил отступ между иконкой и текстом */
+    cursor:             pointer;
+    background-color:   transparent;
+}
+
+element-icon {
+    size:               1.5em;
+    vertical-align:     0.5;
+}
+
+element-text {
+    vertical-align:     0.5;
+    text-color:         inherit;
+    highlight:          bold underline;
+}
+
+/* --- СОСТОЯНИЯ ЭЛЕМЕНТОВ (Фикс "Зебры") --- */
+
+/* Обычное состояние (все невыделенные строки - прозрачные) */
+element normal.normal, 
+element alternate.normal {
+    background-color:   transparent;
+    text-color:         @var-text-def;
+}
+
+/* Выделенное состояние (синий фон) */
+element selected.normal,
+element selected.active {
+    background-color:   @var-active-bg;
+    text-color:         @var-text-active;
+}
+
+/* Активные/Срочные состояния */
+element normal.active, 
+element alternate.active {
+    text-color:         @var-active-bg;
+}
+
+element normal.urgent, 
+element alternate.urgent {
+    background-color:   @var-urgent-bg;
+    text-color:         @var-text-active;
+}
+
+/* Сообщение/Подсказки */
+textbox {
+    background-color:   @var-input-bg;
+    text-color:         @var-text-dim;
+    padding:            10px;
+    border-radius:      8px;
+    horizontal-align:   0.5;
+}
