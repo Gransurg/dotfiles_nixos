@@ -1,2 +1,2 @@
-nvidia.nix
-hardware.nix
+nixos/modules/nvidia.nix
+nixos/modules/hardware.nix
