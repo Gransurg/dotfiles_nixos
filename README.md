@@ -25,5 +25,5 @@ My personal NixOS dotfiles and configuration files.
 Clone the repository:
 
 ```bash
-git clone git@github.com:<your-username>/dotfiles_nix.git
+git clone git@github.com:<methissedrac>/dotfiles_nix.git
 cd dotfiles_nix
