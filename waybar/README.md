@@ -4,7 +4,7 @@ Custom configuration for [Waybar](https://github.com/Alexays/Waybar), a highly c
 
 ## Preview
 
-![Waybar Preview](waybar.png)
+![Waybar Preview](wbfix.png)
 
 ## Contents
 
