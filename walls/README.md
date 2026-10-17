@@ -41,4 +41,3 @@ A collection of desktop wallpapers.
 
 ---
 
-> Some large PNGs may not render as previews on GitHub — open the file directly in that case.
