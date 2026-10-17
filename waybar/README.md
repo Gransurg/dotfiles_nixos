@@ -18,3 +18,14 @@ Custom configuration for [Waybar](https://github.com/Alexays/Waybar), a highly c
    ```bash
    mkdir -p ~/.config/waybar
    cp -r ./* ~/.config/waybar/
+2. Restart Waybar:
+   ```bash
+   killall waybar && waybar &
+
+## Requirements
+
+- Waybar (latest version recommended)
+
+- Nerd Fonts (for icons), e.g. JetBrainsMono Nerd Font
+
+- Any additional dependencies used by custom modules (check config)
