@@ -2,42 +2,43 @@
 
 A collection of desktop wallpapers.
 
-**Total files:** 113 · **Formats:** PNG, JPG, GIF
+**Total files:** 112 · **Formats:** PNG, JPG, GIF
 
 ---
 
 | | | | |
 |---|---|---|---|
-| ![abstract](walls/abstract.png) | ![abstract-swirls](walls/abstract-swirls.jpg) | ![anime-skull](walls/anime-skull.png) | ![arch-logo](walls/arch-logo.png) |
-| ![asteroid-miner](walls/asteroid-miner.png) | ![asteroids](walls/asteroids.png) | ![astronaut](walls/astronaut.png) | ![astronaut-2](walls/astronaut-2.png) |
-| ![aztec-mysteries](walls/aztec-mysteries.png) | ![baby-star](walls/baby-star.png) | ![birmingham](walls/birmingham-museums-trust-5EUh-tq31eA-unsplash.jpg) | ![black-hole](walls/black-hole.png) |
-| ![blue-kaiju](walls/blue-kaiju.png) | ![bridge](walls/bridge.png) | ![buildings](walls/buildings.png) | ![bunnies-road](walls/bunnies-road.png) |
-| ![cabin](walls/cabin.png) | ![cabin-2](walls/cabin-2.png) | ![cafe](walls/cafe.jpg) | ![car](walls/car.jpg) |
-| ![car-2](walls/car-2.png) | ![car-3](walls/car-3.png) | ![car-wreck](walls/car-wreck.png) | ![city](walls/city.png) |
-| ![clorinde](walls/clorinde-genshin-5120x2880-21085.jpg) | ![colorful-planets](walls/colorful-planets.jpg) | ![cool](walls/cool.jpg) | ![cottages-river](walls/cottages-river.png) |
-| ![crystals](walls/crystals.png) | ![cyberpunk](walls/cyberpunk.png) | ![cyberpunk-2](walls/cyberpunk-2.png) | ![cyberpunk-3](walls/cyberpunk-3.png) |
-| ![dark-forest](walls/dark-forest.jpg) | ![dark-waves](walls/dark-waves.jpg) | ![darknet](walls/darknet.png) | ![delorean](walls/delorean.png) |
-| ![dominik-mayer](walls/dominik-mayer.jpg) | ![doom-slayer](walls/doom-slayer.png) | ![evernight](walls/evernight-honkai-5120x2880-24123.jpg) | ![fireskull](walls/fireskull.png) |
-| ![flower-camp](walls/flower-camp.jpg) | ![flowers](walls/flowers.png) | ![flowers-2](walls/flowers-2.png) | ![flying-comets-clouds](walls/flying-comets-clouds.jpg) |
-| ![fox-clearing](walls/fox-clearing.png) | ![fuji](walls/fuji.png) | ![fuji-2](walls/fuji-2.png) | ![galaxies](walls/galaxies.png) |
-| ![galaxy](walls/galaxy.png) | ![galaxy-2](walls/galaxy-2.png) | ![galaxy-3](walls/galaxy-3.png) | ![galaxy-waves](walls/galaxy-waves.jpg) |
-| ![glass-room](walls/glass-room.png) | ![glitch](walls/glitch.png) | ![haunted-house](walls/haunted-house.jpg) | ![hollow-knight](walls/hollow-knight.jpg) |
-| ![hollow-knight-2](walls/hollow-knight-2.jpg) | ![hollow-knight-3](walls/hollow-knight-3.png) | ![hyprland-logo](walls/hyprland-logo.png) | ![japan-city](walls/japan-city.png) |
-| ![keyboards](walls/keyboards.png) | ![kurz](walls/kurz.png) | ![lake](walls/lake.png) | ![lifeform](walls/lifeform.png) |
-| ![lofi-girl](walls/lofi-girl.jpg) | ![lofi-girl-2](walls/lofi-girl-2.jpg) | ![marine-tunnel](walls/marine-tunnel.jpg) | ![maze](walls/maze.png) |
-| ![megumin](walls/megumin.png) | ![montains](walls/montains.png) | ![nature](walls/nature.png) | ![nebula](walls/nebula.png) |
-| ![neon](walls/neon.png) | ![neon-dim](walls/neon-dim.png) | ![neon-man](walls/neon-man.png) | ![night-city](walls/night-city.png) |
-| ![night-forest-path](walls/night-forest-path.png) | ![night-lake](walls/night-lake.jpg) | ![night-landscape](walls/night-landscape.png) | ![night-street](walls/night-street.jpg) |
-| ![nord-car](walls/nord-car.gif) | ![old-computer](walls/old-computer.png) | ![puffy-stars](walls/puffy-stars.jpg) | ![purpled-night](walls/purpled-night.jpg) |
-| ![quasar](walls/quasar.png) | ![reaper](walls/reaper.png) | ![relax](walls/relax.jpg) | ![retro-mario](walls/retro-mario.png) |
-| ![sakura](walls/sakura.png) | ![sakura-gate](walls/sakura-gate.jpg) | ![saturn](walls/saturn.jpg) | ![scenery](walls/scenery.png) |
-| ![ship](walls/ship.png) | ![shore](walls/shore.png) | ![sky](walls/sky.png) | ![solar-system](walls/solar-system.png) |
-| ![souls](walls/souls.png) | ![space](walls/space.jpg) | ![space-2](walls/space-2.jpg) | ![sparkles](walls/sparkles.png) |
-| ![spill](walls/spill.jpg) | ![stars](walls/stars.png) | ![street](walls/street.jpg) | ![swirls](walls/swirls.png) |
-| ![swirls-2](walls/swirls-2.jpg) | ![swirls-3](walls/swirls-3.jpg) | ![switch](walls/switch.png) | ![switch-2](walls/switch-2.jpg) |
-| ![sword](walls/sword.jpg) | ![tokyo](walls/tokyo.png) | ![trigonometry](walls/trigonometry.png) | ![underwater](walls/underwater.png) |
-| ![voxel-houses-monochrome](walls/voxel-houses-monochrome.png) | ![wallhaven-5gylo8](walls/wallhaven-5gylo8.2.jpg) | ![wallhaven-6ljyd6](walls/wallhaven-6ljyd6.jpg) | ![wallhaven-e8yjow](walls/wallhaven-e8yjow.png) |
-| ![wallhaven-qzxdp5](walls/wallhaven-qzxdp5.jpg) | ![waterfall](walls/waterfall.png) | ![window-room](walls/window-room.png) | ![yohoho](walls/yohoho.jpg) |
+| ![abstract](abstract.png) | ![abstract-swirls](abstract-swirls.jpg) | ![anime-skull](anime-skull.png) | ![arch-logo](arch-logo.png) |
+| ![asteroid-miner](asteroid-miner.png) | ![asteroids](asteroids.png) | ![astronaut](astronaut.png) | ![astronaut-2](astronaut-2.png) |
+| ![aztec-mysteries](aztec-mysteries.png) | ![baby-star](baby-star.png) | ![birmingham](birmingham-museums-trust-5EUh-tq31eA-unsplash.jpg) | ![black-hole](black-hole.png) |
+| ![blue-kaiju](blue-kaiju.png) | ![bridge](bridge.png) | ![buildings](buildings.png) | ![bunnies-road](bunnies-road.png) |
+| ![cabin](cabin.png) | ![cabin-2](cabin-2.png) | ![cafe](cafe.jpg) | ![car](car.jpg) |
+| ![car-2](car-2.png) | ![car-3](car-3.png) | ![car-wreck](car-wreck.png) | ![city](city.png) |
+| ![clorinde](clorinde-genshin-5120x2880-21085.jpg) | ![colorful-planets](colorful-planets.jpg) | ![cool](cool.jpg) | ![cottages-river](cottages-river.png) |
+| ![crystals](crystals.png) | ![cyberpunk](cyberpunk.png) | ![cyberpunk-2](cyberpunk-2.png) | ![cyberpunk-3](cyberpunk-3.png) |
+| ![dark-forest](dark-forest.jpg) | ![dark-waves](dark-waves.jpg) | ![darknet](darknet.png) | ![delorean](delorean.png) |
+| ![dominik-mayer](dominik-mayer.jpg) | ![doom-slayer](doom-slayer.png) | ![evernight](evernight-honkai-5120x2880-24123.jpg) | ![fireskull](fireskull.png) |
+| ![flower-camp](flower-camp.jpg) | ![flowers](flowers.png) | ![flowers-2](flowers-2.png) | ![flying-comets-clouds](flying-comets-clouds.jpg) |
+| ![fox-clearing](fox-clearing.png) | ![fuji](fuji.png) | ![fuji-2](fuji-2.png) | ![galaxies](galaxies.png) |
+| ![galaxy](galaxy.png) | ![galaxy-2](galaxy-2.png) | ![galaxy-3](galaxy-3.png) | ![galaxy-waves](galaxy-waves.jpg) |
+| ![glass-room](glass-room.png) | ![glitch](glitch.png) | ![haunted-house](haunted-house.jpg) | ![hollow-knight](hollow-knight.jpg) |
+| ![hollow-knight-2](hollow-knight-2.jpg) | ![hollow-knight-3](hollow-knight-3.png) | ![hyprland-logo](hyprland-logo.png) | ![japan-city](japan-city.png) |
+| ![keyboards](keyboards.png) | ![kurz](kurz.png) | ![lake](lake.png) | ![lifeform](lifeform.png) |
+| ![lofi-girl](lofi-girl.jpg) | ![lofi-girl-2](lofi-girl-2.jpg) | ![marine-tunnel](marine-tunnel.jpg) | ![maze](maze.png) |
+| ![megumin](megumin.png) | ![montains](montains.png) | ![nature](nature.png) | ![nebula](nebula.png) |
+| ![neon](neon.png) | ![neon-dim](neon-dim.png) | ![neon-man](neon-man.png) | ![night-city](night-city.png) |
+| ![night-forest-path](night-forest-path.png) | ![night-lake](night-lake.jpg) | ![night-landscape](night-landscape.png) | ![night-street](night-street.jpg) |
+| ![nord-car](nord-car.gif) | ![old-computer](old-computer.png) | ![puffy-stars](puffy-stars.jpg) | ![purpled-night](purpled-night.jpg) |
+| ![quasar](quasar.png) | ![reaper](reaper.png) | ![relax](relax.jpg) | ![retro-mario](retro-mario.png) |
+| ![sakura](sakura.png) | ![sakura-gate](sakura-gate.jpg) | ![saturn](saturn.jpg) | ![scenery](scenery.png) |
+| ![ship](ship.png) | ![shore](shore.png) | ![sky](sky.png) | ![solar-system](solar-system.png) |
+| ![souls](souls.png) | ![space](space.jpg) | ![space-2](space-2.jpg) | ![sparkles](sparkles.png) |
+| ![spill](spill.jpg) | ![stars](stars.png) | ![street](street.jpg) | ![swirls](swirls.png) |
+| ![swirls-2](swirls-2.jpg) | ![swirls-3](swirls-3.jpg) | ![switch](switch.png) | ![switch-2](switch-2.jpg) |
+| ![sword](sword.jpg) | ![tokyo](tokyo.png) | ![trigonometry](trigonometry.png) | ![underwater](underwater.png) |
+| ![voxel-houses-monochrome](voxel-houses-monochrome.png) | ![wallhaven-5gylo8](wallhaven-5gylo8.2.jpg) | ![wallhaven-6ljyd6](wallhaven-6ljyd6.jpg) | ![wallhaven-e8yjow](wallhaven-e8yjow.png) |
+| ![wallhaven-qzxdp5](wallhaven-qzxdp5.jpg) | ![waterfall](waterfall.png) | ![window-room](window-room.png) | ![yohoho](yohoho.jpg) |
 
 ---
 
+> Some large PNGs may not render as previews on GitHub — open the file directly in that case.
